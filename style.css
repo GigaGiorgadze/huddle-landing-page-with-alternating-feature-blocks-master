@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(193, 100%, 96%);
+    padding: 2% 5%;
+    margin-bottom: 8%;
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-image: url('./images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-position: center;
+}
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+}
+.headerTop button{
+    width: 150px;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: -2px 1px 2px 0px rgba(113,101,101,0.75);
+    -webkit-box-shadow: -2px 1px 2px 0px rgba(113,101,101,0.75);
+    -moz-box-shadow: -2px 1px 2px 0px rgba(113,101,101,0.75);
+    font-weight: 900;
+    color:  hsl(192, 100%, 9%);
+}
+.headerBot{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.headerBot img{
+    width: 50%;
+}
+.headerLeft{
+    width: 40%;
+    font-family: 'Poppins', sans-serif;  
+}
+.headerLeft h1{
+    font-size: 40px;
+    color:  hsl(192, 100%, 9%);
+}
+.headerLeft p{
+    color:  hsl(192, 100%, 9%);
+}
+.headerLeft button{
+    border: none;
+    color: white;
+    background-color: hsl(322, 100%, 66%);
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+}
+section{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    padding:2% 2% 2% 10%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px 0px rgba(85,85,85,0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(85,85,85,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(85,85,85,0.75);
+    margin-top: 2%;
+}
+section img{
+    width: 40%;
+}
+.sectionText{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    color: hsl(192, 100%, 9%);
+}
+.sectionText p{
+    color: hsl(208, 11%, 55%);
+
+}
+.ready{
+    box-shadow: 0px 1px 5px 0px rgba(85,85,85,0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(85,85,85,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(85,85,85,0.75);
+    width: 650px;
+    box-sizing: border-box;
+    margin: auto; 
+    padding: 2% 5%;
+    text-align: center;
+    color: #02292F;
+    margin-top: 10%;
+    position: relative;
+    top: 100px;
+    background-color: white;
+}
+.ready button{
+    background-color: hsl(322, 100%, 66%);
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+footer{
+    background-color: #00252E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    flex-direction: column;
+}
+.footerChild{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.col:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+.col{
+    width: 150px;
+}
+.col *{
+    color: white;
+}
+.row{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.icon{
+    height:25px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
+.icon:hover{
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+.col div{
+    margin-top: 20px;
+}
+.copyright{
+    color: white;
+    align-self: flex-end;
+    margin-right: 5%;
+}
+@media screen and (max-width:700px){
+    .headerTop button{
+        width: 30%;
+    }
+    .headerTop img{
+        width: 40%;
+    }
+    .headerBot{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .headerBot>*{
+        width: 100%;
+    }
+    .headerLeft h1{
+        font-size: 30px;
+    }
+    .headerLeft button{
+        height: 40px;
+        margin-bottom: 2%;
+    }
+    .headerBot img{
+        width: 100%;
+    }
+    section{
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+    section img{
+        width: 100%;
+    }
+    .sectionText{
+        width: 100%;
+    }
+    .flowing{
+        flex-direction: column;
+    }
+    .ready{
+        width: 300px;
+        height: 125px;
+        padding: 6% 2%;
+    }
+    .ready h1{
+        font-size: 16px;
+    }
+    footer{
+        padding-top: 50%;
+    }
+    .footerChild{
+        flex-direction: column;
+    }
+    .col:first-of-type{
+        width: 250px;
+    }
+    .row{
+        align-self: center;
+    }
+    .copyright{
+        align-self: center;
+        font-size: 12px;
+    }
+}
